@@ -1,3 +1,17 @@
+<!-- <form accept-charset="UTF-8" action="/users" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="username">Username:</label>
+  <input id="username"  name="user[username]" type="text"><br>
+
+  <label for="email">e-mail:</label>
+  <input id="email" name="user[email]" type="text"><br>
+
+  <label for="password">Password:</label>
+  <input id="password" name="user[password]" type="password"><br>
+
+  <input type="submit" value="Submit">
+</form> -->
 
 <!--<%= form_tag("/users", method: "post") do %>
     <%= label_tag(:username, "Username:") %>
@@ -12,7 +26,15 @@
     <%= submit_tag("Submit") %>
   <% end %>-->
 
+  
+
   <%= form_for @user do |f| %>
+<ul>
+  <% @user.errors.full_messages.each do |error| %>
+  <li><%= error %></li>
+  <% end %>
+</ul>
+
 <p>
   <%= f.label :username %> <br/>
   <%= f.text_field :username %>
@@ -27,3 +49,4 @@
 </p>
 <p><%= f.submit %></p>
 <% end %>
+
