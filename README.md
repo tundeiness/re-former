@@ -1,24 +1,23 @@
-# README
+# Re-Former
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the Re-Former project, a basic form for inserting new records and editing records in a database has been created in nake html, as well as using rails form helpers.
 
-Things you may want to cover:
+## Configurations
+### From command line:
 
-* Ruby version
+```
+rails db:migrate
 
-* System dependencies
+rails server
 
-* Configuration
+```
+Then, go to http://localhost:3000/users/new
+### Versions
 
-* Database creation
+* Rails 5.2.3
+* Ruby 2.6.1
 
-* Database initialization
+## Contributors
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Tunde Oretade](https://github.com/tundeiness) 
+* [Olga Pelts](https://github.com/pelzolga123)
